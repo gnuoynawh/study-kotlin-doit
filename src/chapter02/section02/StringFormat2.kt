@@ -1,4 +1,4 @@
-package chapter01.section02
+package chapter02.section02
 
 fun main() {
 

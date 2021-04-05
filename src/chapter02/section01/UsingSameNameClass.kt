@@ -1,4 +1,4 @@
-package chapter01.section01
+package chapter02.section01
 
 import extras.Person as User
 
