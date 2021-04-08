@@ -327,3 +327,28 @@
         HelloWorld, arg1, arg2
         HelloWorld, arg1, arg2
         ~~~
+
+#### LamdaParamCount.kt
+
+- 예제
+    ~~~kotlin
+    fun main() {
+    
+        twoLamda({a, b -> "Fisrt $a, $b"}, {"Second $it"})
+    
+        // 위와 동일
+        twoLamda({a, b -> "Fisrt $a, $b"}) {"Second $it"}
+    }
+    
+    fun twoLamda(first: (String, String) -> String, second: (String) -> String) {
+        println(first("OneParam", "TwoParam"))
+        println(second("OenParam"))
+    }
+    ~~~
+- 결과
+    ~~~
+    Fisrt OneParam, TwoParam
+    Second OenParam
+    Fisrt OneParam, TwoParam
+    Second OenParam
+    ~~~
