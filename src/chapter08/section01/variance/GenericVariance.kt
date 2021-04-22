@@ -1,4 +1,4 @@
-package chapter08.section01
+package chapter08.section01.variance
 
 
 /*
